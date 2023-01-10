@@ -1,0 +1,28 @@
+{
+  "name": "socialnetwork",
+  "version": "0.0.1",
+  "description": "Socialnetwork based on microservices",
+  "main": "index.js",
+  "author": "Sabas Mendivil",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^2.3.3",
+    "nanoid": "^4.0.0",
+    "request": "^2.88.2"
+  },
+  "scripts": {
+    "start": "node --experimental-modules api/index.js",
+    "dev": "nodemon --experimental-modules api/index.js",
+    "dev:mysql": "nodemon --experimental-modules mysql/index.js",
+    "dev:post": "nodemon --experimental-modules post/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
